@@ -1,9 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
+
+import GlobalStyles from "./styles/global";
+import Routes from "./routes";
+import Header from "./components/Header";
 
 function App() {
   return (
-    <h1>Hello redux</h1>
+    <BrowserRouter>
+      <Header />
+      <Routes />
+      <GlobalStyles />
+    </BrowserRouter>
   );
 }
 
