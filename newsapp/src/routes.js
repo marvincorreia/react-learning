@@ -11,7 +11,7 @@ function Routes() {
     <Switch>
       <Route path="/" exact component={Home} />
       <Route path="/about" component={About} />
-      <Route path="/favourites" component={Favs} />
+      <Route path="/favs" component={Favs} />
       <Route path="/configs" component={Configs} />
       <Route path="*" component={() => <h1>404 - Not Found</h1>} />
     </Switch>
