@@ -2,6 +2,7 @@ import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
     @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
     *{
       margin:0;
@@ -13,17 +14,17 @@ export default createGlobalStyle`
       -webkit-font-smoothing:antialiased;
     }
 
-    body, input, button{
+    body, input, button, li, a{
       font: 14px Roboto sans-serif;
     }
 
-    button{
+    button{ 
       cursor: pointer;
     }
     #root{
-      max-width:1020px;
-      margin:0 auto;
-      padding:0 20px 50px;
+      /* max-width:1020px; */
+      /* margin:0 auto; */
+      /* padding:0 20px 50px; */
     }
 
 `;
