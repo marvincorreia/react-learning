@@ -13,18 +13,25 @@ export const NavBar = styled.nav`
   ul {
     list-style-type: none;
     padding: 5px;
+    display: flex;
+    align-items:center;
 
     li {
-      display: inline-block;
       text-decoration: none;
       font-weight: bold;
       border: 1px solid transparent;
 
       &:hover {
         color: white;
-        background-color: rgba(0, 0, 0, 0.1);
-        border: 1px solid #dd2323;
+        /* background-color: rgba(0, 0, 0, 0.1); */
+        /* border: 1px solid #dd2323; */
         border-radius: 0.1rem;
+      }
+    }
+
+    #home {
+      a {
+        padding: 0;
       }
     }
   }

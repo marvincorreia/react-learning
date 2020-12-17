@@ -1,6 +1,6 @@
 import React from "react";
 // import { NavLink } from "react-router-dom";
-import { FaReact } from "react-icons/fa";
+import { ImHome } from "react-icons/im";
 
 import { NavBar, NavLink } from "./styles";
 
@@ -9,11 +9,11 @@ function Header() {
     <header>
       <NavBar>
         <ul>
-          {/* <li>
-          <NavLink to="/">
-            <FaReact size={36} color="#000" />
-          </NavLink>
-        </li> */}
+          <li>
+            <NavLink to="/">
+              <ImHome size={20} color="#FFF" />
+            </NavLink>
+          </li>
           <li>
             <NavLink to="/favs">Favourites</NavLink>
           </li>
@@ -21,7 +21,7 @@ function Header() {
             <NavLink to="/configs">Configurations</NavLink>
           </li>
           <li>
-            <NavLink to="about">about</NavLink>
+            <NavLink to="about">About</NavLink>
           </li>
         </ul>
       </NavBar>
