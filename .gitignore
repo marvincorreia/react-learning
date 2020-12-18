@@ -24,3 +24,7 @@ yarn-error.log*
 
 #codestyle
 .eslintcache
+
+#credentials
+.env
+env.js
