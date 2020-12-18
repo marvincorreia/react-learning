@@ -10,12 +10,14 @@ export const Container = styled.div`
   width: 100%;
   height: 100vh;
   z-index: -1;
+  color: ;
 `;
 
 export const Loading = styled.span`
   border: 16px solid #dfdfdf;
   border-radius: 50%;
-  border-top: 16px solid #3498db;
+  /* border-top: 16px solid #3498db; */
+  border-top: 16px solid #750c0c;
   width: 120px;
   height: 120px;
   -webkit-animation: spin 2s linear infinite; /* Safari */

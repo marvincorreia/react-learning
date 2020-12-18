@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
-import * as api from "../../services/api";
-import env from "react-dotenv";
+// import * as api from "../../services/api";
+import api from "../../services/api";
 import Article from "../Article";
 import Loader from "../Loader";
 
@@ -25,7 +25,10 @@ class ArticleList extends Component {
     //     }
     //   });
 
-    const response = await api.topHeadlines({});
+    const response = await api.topHeadlines({
+      category:"general",
+      country:"pt"
+    });
 
     if (response.status === "ok") {
       this.setState({ articles: response.articles });
