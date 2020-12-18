@@ -4,7 +4,7 @@ class Favs extends Component {
   render() {
     return (
       <div>
-        <h1>Favorites page</h1>
+        <h1 id="favTitle">Favorites page</h1>
       </div>
     );
   }

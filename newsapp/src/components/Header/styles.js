@@ -1,6 +1,13 @@
 import styled from "styled-components";
 import { NavLink as ReactNavLink } from "react-router-dom";
 
+export const HeaderContainer = styled.header`
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  width: 100%;
+`;
+
 export const NavBar = styled.nav`
   width: 100%;
   margin: 0;
@@ -14,7 +21,7 @@ export const NavBar = styled.nav`
     list-style-type: none;
     padding: 5px;
     display: flex;
-    align-items:center;
+    align-items: center;
 
     li {
       text-decoration: none;
@@ -47,4 +54,13 @@ export const NavLink = styled(ReactNavLink)`
   &:hover {
     color: white;
   }
+`;
+
+export const Button = styled.button`
+  margin-right: 20px;
+  left: 20px;
+  padding: 10px;
+  border: 1px solid #cc1f1f;
+  color: #fff;
+  background-color: #110404;
 `;

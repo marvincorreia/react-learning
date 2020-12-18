@@ -15,16 +15,6 @@ class ArticleList extends Component {
   }
 
   async componentDidMount() {
-    // fetch(
-    //   `https://newsapi.org/v2/top-headlines?country=pt&category=technology&apiKey=${env.REACT_APP_GNEWS_APIKEY}`
-    // )
-    //   .then((response) => response.json())
-    //   .then((response) => {
-    //     if (response.status === "ok") {
-    //       this.setState({ articles: response.articles });
-    //     }
-    //   });
-
     const response = await api.topHeadlines({
       category:"general",
       country:"pt"
@@ -40,7 +30,8 @@ class ArticleList extends Component {
     if (articles.length > 0) {
       return articles.map((article) => <Article article={article} />);
     } else {
-      return <Loader />;
+      // return <Loader />;
+      return <h1>Loading...</h1>;
     }
   }
 }
